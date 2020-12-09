@@ -1,0 +1,10 @@
+<launch>
+
+	<arg name="robot_name" default="trina2_1"/>
+	<node pkg="pick_and_place" name="first_init_block" output="screen" type="init_blocks">
+	</node>
+	<node pkg="pick_and_place" name="my_arm_to_block" output="screen" type="arm_to_block" ns="$(arg robot_name)" >
+	</node>
+	<node pkg="pick_and_place" name="trina_state_machine" output="screen" type="state_machine" ns="$(arg robot_name)">
+	</node>
+</launch>

@@ -1,0 +1,7 @@
+<launch>
+
+	<arg name="robot_name" default="trina2_1"/>
+	<node pkg="pick_and_place" name="my_pick_and_place" type="pick_and_place" output="screen" ns="$(arg robot_name)">
+	</node>
+
+</launch>

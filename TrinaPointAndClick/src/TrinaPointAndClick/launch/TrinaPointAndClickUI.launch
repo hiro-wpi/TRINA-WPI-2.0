@@ -1,0 +1,10 @@
+<!--output="screen"-->
+
+<launch>
+
+    <node pkg="TrinaPointAndClick" type="CVgui" name="CVgui" output="screen">
+    </node>
+    <node pkg="TrinaPointAndClick" type="Marker_List_Node.py" name="Marker_List_Node" output="screen">
+    </node>
+
+</launch>

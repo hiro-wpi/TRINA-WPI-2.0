@@ -1,0 +1,48 @@
+.grid-container {
+ height: 480px;
+ width: 640px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Left-Panel PhotoView PhotoView"
+    "Left-Panel PhotoView PhotoView"
+    "Left-Panel Bottom-Panel Right-Panel";
+  background-color: black;
+  content-align: center;
+}
+.Left-Panel { grid-area: Left-Panel; }
+.Bottom-Panel { grid-area: Bottom-Panel; }
+.PhotoView { grid-area: PhotoView;
+		position: relative;
+		display: inline-block; }
+.RightPanel {grid-area Right-Panel; }
+
+
+#aroverlay{ 
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	z-index: 999;
+	background-color: RGBA(255,0,0,0.3);
+
+}
+
+#view {
+display: block;
+   max-width: 100%;
+   height: auto;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+p { 
+   width: 100%;
+   size: 2em;
+   text-align: center;
+   color: white;}
+button { background-color: grey;  width: 100px; height: 40px; }
+

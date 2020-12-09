@@ -1,0 +1,6 @@
+<launch>
+
+	<arg name="robot_name" default="trina2_1"/>
+	<node pkg="moveit_demo" name="my_moveit_demo" type="moveit_demo" ns="$(arg robot_name)">
+	</node>
+</launch>

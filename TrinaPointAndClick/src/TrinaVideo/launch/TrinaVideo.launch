@@ -1,0 +1,8 @@
+<!--output="screen"-->
+
+<launch>
+
+    <node pkg="TrinaVideo" type="TrinaVideo" name="TrinaVideo" output="screen">
+    </node>
+
+</launch>
